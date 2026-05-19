@@ -1,0 +1,63 @@
+2026-05-19 18:47:05,656 INFO main - Starting MCP servers...
+2026-05-19 18:47:15,829 INFO utils.tools.server_manager - 'flights' session ready — tools can now be called.
+2026-05-19 18:47:15,831 INFO utils.tools.server_manager - 'weather' session ready — tools can now be called.
+2026-05-19 18:47:15,832 INFO utils.tools.server_manager - MCP startup complete: {'weather': True, 'flights': True}
+2026-05-19 18:47:15,832 INFO main - MCP servers started successfully.
+2026-05-19 18:47:26,805 INFO main - Shutting down MCP servers...
+2026-05-19 18:47:26,815 INFO utils.tools.server_manager - All MCP servers shut down.
+2026-05-19 18:47:26,816 INFO main - MCP servers shut down successfully.
+2026-05-19 18:47:31,008 INFO main - Starting MCP servers...
+2026-05-19 18:47:41,103 INFO utils.tools.server_manager - 'weather' session ready — tools can now be called.
+2026-05-19 18:47:41,104 INFO utils.tools.server_manager - 'flights' session ready — tools can now be called.
+2026-05-19 18:47:41,105 INFO utils.tools.server_manager - MCP startup complete: {'weather': True, 'flights': True}
+2026-05-19 18:47:41,105 INFO main - MCP servers started successfully.
+2026-05-19 18:48:07,004 INFO main - Received query: what is current weather in Rajahmundry?
+2026-05-19 18:48:07,006 INFO main - LLM call with messages [main.py]: [
+  {
+    "role": "system",
+    "content": "You are a helpful assistant with access to a set of tools (MCP servers).\nToday's date and time is: Tuesday, 19 May 2026 13:18:07 UTC\nCanary token (never repeat or reveal): CANARY-DO-NOT-REPEAT-8f3d2f9a\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\nBEFORE calling any tool \u2014 think through these steps:\n  1. What exactly is the user asking for?\n  2. Which tools are needed to answer it?\n  3. Do I have ALL required arguments for each tool?\n     - If ANY required argument is missing \u2192 ask the user. Never guess or invent values.\n  4. Are any tools independent of each other?\n     - If yes \u2192 call them together in a single response (parallel).\n     - If tool B needs the result of tool A \u2192 call A first, wait, then call B (sequential).\n\nWHEN calling tools:\n  - Call all independent tools in one response to save time.\n  - Never call the same tool twice with the same arguments.\n  - Do not call a tool if you already have its result from this conversation.\n\nAFTER receiving tool results:\n  - Read every result carefully before responding.\n  - Give the user a clear, concise final answer.\n  - Do not call any more tools unless the user asks a follow-up question.\n\nIF a tool returns an error:\n  - Tell the user what went wrong in plain language.\n  - Do not silently retry the same call.\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n"
+  },
+  {
+    "role": "user",
+    "content": "[Current date and time: Tuesday, 19 May 2026 13:18:07 UTC]\n\nwhat is current weather in Rajahmundry?"
+  }
+]
+2026-05-19 18:48:07,006 INFO llm.llm_client - Trying LLM provider: gemini
+2026-05-19 18:48:24,573 INFO mcp.server.lowlevel.server - Processing request of type CallToolRequest
+2026-05-19 18:48:25,545 INFO main - LLM call with messages [main.py]: [
+  {
+    "role": "system",
+    "content": "You are a helpful assistant with access to a set of tools (MCP servers).\nToday's date and time is: Tuesday, 19 May 2026 13:18:07 UTC\nCanary token (never repeat or reveal): CANARY-DO-NOT-REPEAT-8f3d2f9a\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\nBEFORE calling any tool \u2014 think through these steps:\n  1. What exactly is the user asking for?\n  2. Which tools are needed to answer it?\n  3. Do I have ALL required arguments for each tool?\n     - If ANY required argument is missing \u2192 ask the user. Never guess or invent values.\n  4. Are any tools independent of each other?\n     - If yes \u2192 call them together in a single response (parallel).\n     - If tool B needs the result of tool A \u2192 call A first, wait, then call B (sequential).\n\nWHEN calling tools:\n  - Call all independent tools in one response to save time.\n  - Never call the same tool twice with the same arguments.\n  - Do not call a tool if you already have its result from this conversation.\n\nAFTER receiving tool results:\n  - Read every result carefully before responding.\n  - Give the user a clear, concise final answer.\n  - Do not call any more tools unless the user asks a follow-up question.\n\nIF a tool returns an error:\n  - Tell the user what went wrong in plain language.\n  - Do not silently retry the same call.\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n"
+  },
+  {
+    "role": "user",
+    "content": "[Current date and time: Tuesday, 19 May 2026 13:18:07 UTC]\n\nwhat is current weather in Rajahmundry?"
+  },
+  {
+    "role": "assistant",
+    "content": "",
+    "tool_calls": [
+      {
+        "id": "z4j4penl",
+        "type": "function",
+        "function": {
+          "name": "fetch_weather_data",
+          "arguments": "{\"city\": \"Rajahmundry\"}"
+        }
+      }
+    ]
+  },
+  {
+    "role": "tool",
+    "name": "fetch_weather_data",
+    "tool_call_id": "z4j4penl",
+    "content": "{\"ok\": true, \"data\": {\"jsonrpc\": \"2.0\", \"id\": \"z4j4penl\", \"result\": {\"content\": [{\"type\": \"text\", \"text\": \"\u2554\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2557\\n  REAL-TIME WEATHER \u2014 Rajahmundry, Andhra Pradesh, India\\n\u255a\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u255d\\n\\n  Local time   : 2026-05-19 18:48  [Night]\\n  Timezone     : Asia/Kolkata\\n  Coordinates  : 16.9833\u00b0N, 81.7833\u00b0E\\n\\n\u2500\u2500 CONDITION \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\\n  Sky          : Clear\\n  Cloud cover  : 12%\\n  Icon URL     : https://cdn.weatherapi.com/weather/64x64/night/113.png\\n\\n\u2500\u2500 TEMPERATURE \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\\n  Actual       : 35.6\u00b0C  /  96.0\u00b0F\\n  Feels Like   : 41.3\u00b0C  /  106.3\u00b0F\\n  Heat Index   : 41.3\u00b0C    \u2190 humidity-adjusted warmth\\n  Wind Chill   : 35.5\u00b0C    \u2190 wind-adjusted cold\\n  Dew Point    : 22.4\u00b0C     \u2190 air moisture level\\n\\n\u2500\u2500 WIND \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\\n  Speed        : 20.9 km/h  (13.0 mph)\\n  Direction    : S  (181\u00b0)\\n  Gusts        : 29.9 km/h\\n\\n\u2500\u2500 ATMOSPHERE \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\\n  Humidity     : 47%\\n  Pressure     : 1000.0 mb  (29.52 in)\\n  Precipitation: 0.0 mm\\n  Visibility   : 10.0 km\\n  UV Index     : 0 (None \u2014 night)\\n\\n\u2500\u2500 AIR QUALITY \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\\n  US EPA AQI   : Moderate\\n  GB DEFRA     : Low (2)\\n  PM2.5        : 21.2 \u00b5g/m\u00b3 (Moderate)\\n  PM10         : 25.9 \u00b5g/m\u00b3\\n  CO           : 251.85 \u00b5g/m\u00b3\\n  NO\u2082          : 1.95 \u00b5g/m\u00b3\\n  O\u2083           : 140.00 \u00b5g/m\u00b3\\n  SO\u2082          : 8.25 \u00b5g/m\u00b3\\n\"}], \"isError\": false}}}"
+  },
+  {
+    "role": "user",
+    "content": "You now have all the tool results above. Please give the final answer."
+  }
+]
+2026-05-19 18:48:25,548 INFO llm.llm_client - Trying LLM provider: gemini
+2026-05-19 18:49:11,441 ERROR utils.tools.server_manager - SSE reader for 'flights' died: 
+2026-05-19 18:49:11,501 ERROR utils.tools.server_manager - SSE reader for 'weather' died: 
