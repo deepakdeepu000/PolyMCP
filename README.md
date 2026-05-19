@@ -10,7 +10,7 @@
 
 - Python 3.14+ (matches `pyproject.toml`).
 - Redis running (WSL service or manual start).
-- API keys in `.env` (see Environment section).
+- API keys in `.env`
 
 ## Environment (.env)
 
