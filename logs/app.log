@@ -1,63 +1,116 @@
-2026-05-19 18:47:05,656 INFO main - Starting MCP servers...
-2026-05-19 18:47:15,829 INFO utils.tools.server_manager - 'flights' session ready — tools can now be called.
-2026-05-19 18:47:15,831 INFO utils.tools.server_manager - 'weather' session ready — tools can now be called.
-2026-05-19 18:47:15,832 INFO utils.tools.server_manager - MCP startup complete: {'weather': True, 'flights': True}
-2026-05-19 18:47:15,832 INFO main - MCP servers started successfully.
-2026-05-19 18:47:26,805 INFO main - Shutting down MCP servers...
-2026-05-19 18:47:26,815 INFO utils.tools.server_manager - All MCP servers shut down.
-2026-05-19 18:47:26,816 INFO main - MCP servers shut down successfully.
-2026-05-19 18:47:31,008 INFO main - Starting MCP servers...
-2026-05-19 18:47:41,103 INFO utils.tools.server_manager - 'weather' session ready — tools can now be called.
-2026-05-19 18:47:41,104 INFO utils.tools.server_manager - 'flights' session ready — tools can now be called.
-2026-05-19 18:47:41,105 INFO utils.tools.server_manager - MCP startup complete: {'weather': True, 'flights': True}
-2026-05-19 18:47:41,105 INFO main - MCP servers started successfully.
-2026-05-19 18:48:07,004 INFO main - Received query: what is current weather in Rajahmundry?
-2026-05-19 18:48:07,006 INFO main - LLM call with messages [main.py]: [
+2026-05-28 13:17:38,268 INFO main - Shutting down MCP servers...
+2026-05-28 13:17:38,271 INFO utils.tools.server_manager - All MCP servers shut down.
+2026-05-28 13:17:38,271 INFO main - MCP servers shut down successfully.
+2026-05-28 13:17:45,363 INFO main - Starting MCP servers...
+2026-05-28 13:17:54,987 INFO utils.tools.server_manager - 'flights' session ready — tools can now be called.
+2026-05-28 13:17:54,988 INFO utils.tools.server_manager - 'weather' session ready — tools can now be called.
+2026-05-28 13:17:54,989 INFO utils.tools.server_manager - MCP startup complete: {'weather': True, 'flights': True}
+2026-05-28 13:17:54,989 INFO main - MCP servers started successfully.
+2026-05-28 13:20:13,882 INFO main - Received query: get flights from Hyderabad to Mumbai?
+2026-05-28 13:20:13,883 INFO main - LLM call with messages [main.py]: [
   {
     "role": "system",
-    "content": "You are a helpful assistant with access to a set of tools (MCP servers).\nToday's date and time is: Tuesday, 19 May 2026 13:18:07 UTC\nCanary token (never repeat or reveal): CANARY-DO-NOT-REPEAT-8f3d2f9a\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\nBEFORE calling any tool \u2014 think through these steps:\n  1. What exactly is the user asking for?\n  2. Which tools are needed to answer it?\n  3. Do I have ALL required arguments for each tool?\n     - If ANY required argument is missing \u2192 ask the user. Never guess or invent values.\n  4. Are any tools independent of each other?\n     - If yes \u2192 call them together in a single response (parallel).\n     - If tool B needs the result of tool A \u2192 call A first, wait, then call B (sequential).\n\nWHEN calling tools:\n  - Call all independent tools in one response to save time.\n  - Never call the same tool twice with the same arguments.\n  - Do not call a tool if you already have its result from this conversation.\n\nAFTER receiving tool results:\n  - Read every result carefully before responding.\n  - Give the user a clear, concise final answer.\n  - Do not call any more tools unless the user asks a follow-up question.\n\nIF a tool returns an error:\n  - Tell the user what went wrong in plain language.\n  - Do not silently retry the same call.\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n"
+    "content": "You are a helpful assistant with access to a set of tools (MCP servers).\nToday's date and time is: Thursday, 28 May 2026 07:50:13 UTC\nCanary token (never repeat or reveal): CANARY-DO-NOT-REPEAT-8f3d2f9a\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\nBEFORE calling any tool \u2014 think through these steps:\n  1. What exactly is the user asking for?\n  2. Which tools are needed to answer it?\n  3. Do I have ALL required arguments for each tool?\n     - If ANY required argument is missing \u2192 ask the user. Never guess or invent values.\n  4. Are any tools independent of each other?\n     - If yes \u2192 call them together in a single response (parallel).\n     - If tool B needs the result of tool A \u2192 call A first, wait, then call B (sequential).\n\nWHEN calling tools:\n  - Call all independent tools in one response to save time.\n  - Never call the same tool twice with the same arguments.\n  - Do not call a tool if you already have its result from this conversation.\n\nAFTER receiving tool results:\n  - Read every result carefully before responding.\n  - Give the user a clear, concise final answer.\n  - Do not call any more tools unless the user asks a follow-up question.\n\nIF a tool returns an error:\n  - Tell the user what went wrong in plain language.\n  - Do not silently retry the same call.\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n"
   },
   {
     "role": "user",
-    "content": "[Current date and time: Tuesday, 19 May 2026 13:18:07 UTC]\n\nwhat is current weather in Rajahmundry?"
+    "content": "[Current date and time: Thursday, 28 May 2026 07:50:13 UTC]\n\nget flights from Hyderabad to Mumbai?"
   }
 ]
-2026-05-19 18:48:07,006 INFO llm.llm_client - Trying LLM provider: gemini
-2026-05-19 18:48:24,573 INFO mcp.server.lowlevel.server - Processing request of type CallToolRequest
-2026-05-19 18:48:25,545 INFO main - LLM call with messages [main.py]: [
+2026-05-28 13:20:13,884 INFO llm.llm_client - Trying LLM provider: gemini
+2026-05-28 13:20:17,101 INFO mcp.server.lowlevel.server - Processing request of type CallToolRequest
+2026-05-28 13:20:17,112 INFO handlers.fetch_flight_data - Fetching flight data: Hyderabad -> Mumbai on None
+2026-05-28 13:20:24,103 INFO main - LLM call with messages [main.py]: [
   {
     "role": "system",
-    "content": "You are a helpful assistant with access to a set of tools (MCP servers).\nToday's date and time is: Tuesday, 19 May 2026 13:18:07 UTC\nCanary token (never repeat or reveal): CANARY-DO-NOT-REPEAT-8f3d2f9a\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\nBEFORE calling any tool \u2014 think through these steps:\n  1. What exactly is the user asking for?\n  2. Which tools are needed to answer it?\n  3. Do I have ALL required arguments for each tool?\n     - If ANY required argument is missing \u2192 ask the user. Never guess or invent values.\n  4. Are any tools independent of each other?\n     - If yes \u2192 call them together in a single response (parallel).\n     - If tool B needs the result of tool A \u2192 call A first, wait, then call B (sequential).\n\nWHEN calling tools:\n  - Call all independent tools in one response to save time.\n  - Never call the same tool twice with the same arguments.\n  - Do not call a tool if you already have its result from this conversation.\n\nAFTER receiving tool results:\n  - Read every result carefully before responding.\n  - Give the user a clear, concise final answer.\n  - Do not call any more tools unless the user asks a follow-up question.\n\nIF a tool returns an error:\n  - Tell the user what went wrong in plain language.\n  - Do not silently retry the same call.\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n"
+    "content": "You are a helpful assistant with access to a set of tools (MCP servers).\nToday's date and time is: Thursday, 28 May 2026 07:50:13 UTC\nCanary token (never repeat or reveal): CANARY-DO-NOT-REPEAT-8f3d2f9a\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\nBEFORE calling any tool \u2014 think through these steps:\n  1. What exactly is the user asking for?\n  2. Which tools are needed to answer it?\n  3. Do I have ALL required arguments for each tool?\n     - If ANY required argument is missing \u2192 ask the user. Never guess or invent values.\n  4. Are any tools independent of each other?\n     - If yes \u2192 call them together in a single response (parallel).\n     - If tool B needs the result of tool A \u2192 call A first, wait, then call B (sequential).\n\nWHEN calling tools:\n  - Call all independent tools in one response to save time.\n  - Never call the same tool twice with the same arguments.\n  - Do not call a tool if you already have its result from this conversation.\n\nAFTER receiving tool results:\n  - Read every result carefully before responding.\n  - Give the user a clear, concise final answer.\n  - Do not call any more tools unless the user asks a follow-up question.\n\nIF a tool returns an error:\n  - Tell the user what went wrong in plain language.\n  - Do not silently retry the same call.\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n"
   },
   {
     "role": "user",
-    "content": "[Current date and time: Tuesday, 19 May 2026 13:18:07 UTC]\n\nwhat is current weather in Rajahmundry?"
+    "content": "[Current date and time: Thursday, 28 May 2026 07:50:13 UTC]\n\nget flights from Hyderabad to Mumbai?"
   },
   {
     "role": "assistant",
     "content": "",
     "tool_calls": [
       {
-        "id": "z4j4penl",
+        "id": "ve7126ny",
         "type": "function",
         "function": {
-          "name": "fetch_weather_data",
-          "arguments": "{\"city\": \"Rajahmundry\"}"
+          "name": "fetch_flight_data",
+          "arguments": "{\"origin\": \"Hyderabad\", \"date\": \"2026-05-28\", \"destination\": \"Mumbai\"}"
         }
       }
     ]
   },
   {
     "role": "tool",
-    "name": "fetch_weather_data",
-    "tool_call_id": "z4j4penl",
-    "content": "{\"ok\": true, \"data\": {\"jsonrpc\": \"2.0\", \"id\": \"z4j4penl\", \"result\": {\"content\": [{\"type\": \"text\", \"text\": \"\u2554\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2557\\n  REAL-TIME WEATHER \u2014 Rajahmundry, Andhra Pradesh, India\\n\u255a\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u255d\\n\\n  Local time   : 2026-05-19 18:48  [Night]\\n  Timezone     : Asia/Kolkata\\n  Coordinates  : 16.9833\u00b0N, 81.7833\u00b0E\\n\\n\u2500\u2500 CONDITION \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\\n  Sky          : Clear\\n  Cloud cover  : 12%\\n  Icon URL     : https://cdn.weatherapi.com/weather/64x64/night/113.png\\n\\n\u2500\u2500 TEMPERATURE \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\\n  Actual       : 35.6\u00b0C  /  96.0\u00b0F\\n  Feels Like   : 41.3\u00b0C  /  106.3\u00b0F\\n  Heat Index   : 41.3\u00b0C    \u2190 humidity-adjusted warmth\\n  Wind Chill   : 35.5\u00b0C    \u2190 wind-adjusted cold\\n  Dew Point    : 22.4\u00b0C     \u2190 air moisture level\\n\\n\u2500\u2500 WIND \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\\n  Speed        : 20.9 km/h  (13.0 mph)\\n  Direction    : S  (181\u00b0)\\n  Gusts        : 29.9 km/h\\n\\n\u2500\u2500 ATMOSPHERE \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\\n  Humidity     : 47%\\n  Pressure     : 1000.0 mb  (29.52 in)\\n  Precipitation: 0.0 mm\\n  Visibility   : 10.0 km\\n  UV Index     : 0 (None \u2014 night)\\n\\n\u2500\u2500 AIR QUALITY \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\\n  US EPA AQI   : Moderate\\n  GB DEFRA     : Low (2)\\n  PM2.5        : 21.2 \u00b5g/m\u00b3 (Moderate)\\n  PM10         : 25.9 \u00b5g/m\u00b3\\n  CO           : 251.85 \u00b5g/m\u00b3\\n  NO\u2082          : 1.95 \u00b5g/m\u00b3\\n  O\u2083           : 140.00 \u00b5g/m\u00b3\\n  SO\u2082          : 8.25 \u00b5g/m\u00b3\\n\"}], \"isError\": false}}}"
+    "name": "fetch_flight_data",
+    "tool_call_id": "ve7126ny",
+    "content": "{\"ok\": true, \"data\": {\"jsonrpc\": \"2.0\", \"id\": \"ve7126ny\", \"result\": {\"content\": [{\"type\": \"text\", \"text\": \"{\\n  \\\"query_summary\\\": \\\"Direct flights from BPM, HYD to BOM\\\",\\n  \\\"time_window\\\": \\\"15:20 to 03:20\\\",\\n  \\\"flights\\\": [\\n    {\\n      \\\"flight_identity\\\": \\\"Air India AI 2447\\\",\\n      \\\"status\\\": \\\"Unknown\\\",\\n      \\\"departure\\\": {\\n        \\\"local_time\\\": \\\"2026-05-28 17:25+05:30\\\",\\n        \\\"terminal\\\": \\\"N/A\\\",\\n        \\\"gate\\\": \\\"N/A\\\",\\n        \\\"is_delayed\\\": false\\n      },\\n      \\\"arrival\\\": {\\n        \\\"airport\\\": \\\"Mumbai\\\",\\n        \\\"scheduled_local\\\": \\\"2026-05-28 19:25+05:30\\\",\\n        \\\"terminal\\\": \\\"2\\\"\\n      },\\n      \\\"aircraft\\\": \\\"Airbus A320 NEO\\\",\\n      \\\"airline\\\": \\\"Air India\\\"\\n    },\\n    {\\n      \\\"flight_identity\\\": \\\"IndiGo 6E 5259\\\",\\n      \\\"status\\\": \\\"Unknown\\\",\\n      \\\"departure\\\": {\\n        \\\"local_time\\\": \\\"2026-05-28 17:30+05:30\\\",\\n        \\\"terminal\\\": \\\"N/A\\\",\\n        \\\"gate\\\": \\\"N/A\\\",\\n        \\\"is_delayed\\\": false\\n      },\\n      \\\"arrival\\\": {\\n        \\\"airport\\\": \\\"Mumbai\\\",\\n        \\\"scheduled_local\\\": \\\"2026-05-28 18:50+05:30\\\",\\n        \\\"terminal\\\": \\\"1\\\"\\n      },\\n      \\\"aircraft\\\": \\\"Airbus A320\\\",\\n      \\\"airline\\\": \\\"IndiGo\\\"\\n    },\\n    {\\n      \\\"flight_identity\\\": \\\"IndiGo 6E 5039\\\",\\n      \\\"status\\\": \\\"Unknown\\\",\\n      \\\"departure\\\": {\\n        \\\"local_time\\\": \\\"2026-05-28 19:00+05:30\\\",\\n        \\\"terminal\\\": \\\"N/A\\\",\\n        \\\"gate\\\": \\\"N/A\\\",\\n        \\\"is_delayed\\\": false\\n      },\\n      \\\"arrival\\\": {\\n        \\\"airport\\\": \\\"Mumbai\\\",\\n        \\\"scheduled_local\\\": \\\"2026-05-28 20:20+05:30\\\",\\n        \\\"terminal\\\": \\\"1\\\"\\n      },\\n      \\\"aircraft\\\": \\\"Airbus A320\\\",\\n      \\\"airline\\\": \\\"IndiGo\\\"\\n    },\\n    {\\n      \\\"flight_identity\\\": \\\"Air India AI 2876\\\",\\n      \\\"status\\\": \\\"Expected\\\",\\n      \\\"departure\\\": {\\n        \\\"local_time\\\": \\\"2026-05-28 20:35+05:30\\\",\\n        \\\"terminal\\\": \\\"N/A\\\",\\n        \\\"gate\\\": \\\"N/A\\\",\\n        \\\"is_delayed\\\": false\\n      },\\n      \\\"arrival\\\": {\\n        \\\"airport\\\": \\\"Mumbai\\\",\\n        \\\"scheduled_local\\\": \\\"2026-05-28 22:30+05:30\\\",\\n        \\\"terminal\\\": \\\"2\\\"\\n      },\\n      \\\"aircraft\\\": \\\"Airbus A320 NEO\\\",\\n      \\\"airline\\\": \\\"Air India\\\"\\n    },\\n    {\\n      \\\"flight_identity\\\": \\\"IndiGo 6E 5203\\\",\\n      \\\"status\\\": \\\"Expected\\\",\\n      \\\"departure\\\": {\\n        \\\"local_time\\\": \\\"2026-05-28 22:05+05:30\\\",\\n        \\\"terminal\\\": \\\"N/A\\\",\\n        \\\"gate\\\": \\\"N/A\\\",\\n        \\\"is_delayed\\\": false\\n      },\\n      \\\"arrival\\\": {\\n        \\\"airport\\\": \\\"Mumbai\\\",\\n        \\\"scheduled_local\\\": \\\"2026-05-28 23:30+05:30\\\",\\n        \\\"terminal\\\": \\\"1\\\"\\n      },\\n      \\\"aircraft\\\": \\\"Airbus A320\\\",\\n      \\\"airline\\\": \\\"IndiGo\\\"\\n    },\\n    {\\n      \\\"flight_identity\\\": \\\"Air India AI 2699\\\",\\n      \\\"status\\\": \\\"Expected\\\",\\n      \\\"departure\\\": {\\n        \\\"local_time\\\": \\\"2026-05-28 22:20+05:30\\\",\\n        \\\"terminal\\\": \\\"N/A\\\",\\n        \\\"gate\\\": \\\"N/A\\\",\\n        \\\"is_delayed\\\": false\\n      },\\n      \\\"arrival\\\": {\\n        \\\"airport\\\": \\\"Mumbai\\\",\\n        \\\"scheduled_local\\\": \\\"2026-05-29 00:15+05:30\\\",\\n        \\\"terminal\\\": \\\"2\\\"\\n      },\\n      \\\"aircraft\\\": \\\"Airbus A320 NEO\\\",\\n      \\\"airline\\\": \\\"Air India\\\"\\n    },\\n    {\\n      \\\"flight_identity\\\": \\\"IndiGo 6E 5057\\\",\\n      \\\"status\\\": \\\"Expected\\\",\\n      \\\"departure\\\": {\\n        \\\"local_time\\\": \\\"2026-05-28 23:30+05:30\\\",\\n        \\\"terminal\\\": \\\"N/A\\\",\\n        \\\"gate\\\": \\\"N/A\\\",\\n        \\\"is_delayed\\\": false\\n      },\\n      \\\"arrival\\\": {\\n        \\\"airport\\\": \\\"Mumbai\\\",\\n        \\\"scheduled_local\\\": \\\"2026-05-29 01:00+05:30\\\",\\n        \\\"terminal\\\": \\\"1\\\"\\n      },\\n      \\\"aircraft\\\": \\\"Airbus A320\\\",\\n      \\\"airline\\\": \\\"IndiGo\\\"\\n    },\\n    {\\n      \\\"flight_identity\\\": \\\"IndiGo 6E 5143\\\",\\n      \\\"status\\\": \\\"Expected\\\",\\n      \\\"departure\\\": {\\n        \\\"local_time\\\": \\\"2026-05-29 03:00+05:30\\\",\\n        \\\"terminal\\\": \\\"N/A\\\",\\n        \\\"gate\\\": \\\"N/A\\\",\\n        \\\"is_delayed\\\": false\\n      },\\n      \\\"arrival\\\": {\\n        \\\"airport\\\": \\\"Mumbai\\\",\\n        \\\"scheduled_local\\\": \\\"2026-05-29 04:30+05:30\\\",\\n        \\\"terminal\\\": \\\"1\\\"\\n      },\\n      \\\"aircraft\\\": \\\"Airbus A320\\\",\\n      \\\"airline\\\": \\\"IndiGo\\\"\\n    }\\n  ],\\n  \\\"count\\\": 8\\n}\"}], \"isError\": false}}}"
   },
   {
     "role": "user",
     "content": "You now have all the tool results above. Please give the final answer."
   }
 ]
-2026-05-19 18:48:25,548 INFO llm.llm_client - Trying LLM provider: gemini
-2026-05-19 18:49:11,441 ERROR utils.tools.server_manager - SSE reader for 'flights' died: 
-2026-05-19 18:49:11,501 ERROR utils.tools.server_manager - SSE reader for 'weather' died: 
+2026-05-28 13:20:24,104 INFO llm.llm_client - Trying LLM provider: gemini
+2026-05-28 13:23:27,127 INFO main - Shutting down MCP servers...
+2026-05-28 13:23:27,134 INFO utils.tools.server_manager - All MCP servers shut down.
+2026-05-28 13:23:27,135 INFO main - MCP servers shut down successfully.
+2026-05-28 13:23:30,906 INFO main - Starting MCP servers...
+2026-05-28 13:23:40,666 INFO utils.tools.server_manager - 'flights' session ready — tools can now be called.
+2026-05-28 13:23:40,667 INFO utils.tools.server_manager - 'weather' session ready — tools can now be called.
+2026-05-28 13:23:40,667 INFO utils.tools.server_manager - MCP startup complete: {'weather': True, 'flights': True}
+2026-05-28 13:23:40,667 INFO main - MCP servers started successfully.
+2026-05-28 13:23:41,261 INFO main - Shutting down MCP servers...
+2026-05-28 13:23:41,268 INFO utils.tools.server_manager - All MCP servers shut down.
+2026-05-28 13:23:41,268 INFO main - MCP servers shut down successfully.
+2026-05-28 13:23:44,683 INFO main - Starting MCP servers...
+2026-05-28 13:23:54,115 INFO utils.tools.server_manager - 'weather' session ready — tools can now be called.
+2026-05-28 13:23:54,349 INFO utils.tools.server_manager - 'flights' session ready — tools can now be called.
+2026-05-28 13:23:54,349 INFO utils.tools.server_manager - MCP startup complete: {'weather': True, 'flights': True}
+2026-05-28 13:23:54,349 INFO main - MCP servers started successfully.
+2026-05-28 13:23:54,511 INFO main - Shutting down MCP servers...
+2026-05-28 13:23:54,514 INFO utils.tools.server_manager - All MCP servers shut down.
+2026-05-28 13:23:54,514 INFO main - MCP servers shut down successfully.
+2026-05-28 13:23:57,029 INFO main - Starting MCP servers...
+2026-05-28 13:24:07,005 INFO utils.tools.server_manager - 'weather' session ready — tools can now be called.
+2026-05-28 13:24:07,005 INFO utils.tools.server_manager - 'flights' session ready — tools can now be called.
+2026-05-28 13:24:07,006 INFO utils.tools.server_manager - MCP startup complete: {'weather': True, 'flights': True}
+2026-05-28 13:24:07,006 INFO main - MCP servers started successfully.
+2026-05-28 13:24:07,415 INFO main - Shutting down MCP servers...
+2026-05-28 13:24:07,421 INFO utils.tools.server_manager - All MCP servers shut down.
+2026-05-28 13:24:07,421 INFO main - MCP servers shut down successfully.
+2026-05-28 13:24:10,963 INFO main - Starting MCP servers...
+2026-05-28 13:24:20,195 ERROR utils.tools.server_manager - 'weather' did not become healthy in time
+2026-05-28 13:24:20,197 ERROR utils.tools.server_manager - 'flights' did not become healthy in time
+2026-05-28 13:24:20,198 INFO utils.tools.server_manager - MCP startup complete: {'weather': False, 'flights': False}
+2026-05-28 13:24:20,198 INFO main - Shutting down MCP servers...
+2026-05-28 13:24:20,199 INFO utils.tools.server_manager - All MCP servers shut down.
+2026-05-28 13:24:20,200 INFO main - MCP servers shut down successfully.
+2026-05-28 13:24:25,989 INFO main - Starting MCP servers...
+2026-05-28 13:24:34,800 INFO utils.tools.server_manager - 'weather' session ready — tools can now be called.
+2026-05-28 13:24:35,065 INFO utils.tools.server_manager - 'flights' session ready — tools can now be called.
+2026-05-28 13:24:35,066 INFO utils.tools.server_manager - MCP startup complete: {'weather': True, 'flights': True}
+2026-05-28 13:24:35,066 INFO main - MCP servers started successfully.
+2026-05-28 13:32:20,790 ERROR utils.tools.server_manager - SSE reader for 'flights' died: peer closed connection without sending complete message body (incomplete chunked read)
+2026-05-28 13:32:20,857 INFO main - Shutting down MCP servers...
+2026-05-28 13:32:20,878 INFO utils.tools.server_manager - All MCP servers shut down.
+2026-05-28 13:32:20,878 INFO main - MCP servers shut down successfully.
+2026-05-28 13:58:42,525 INFO main - Starting MCP servers...
+2026-05-28 13:58:44,500 INFO utils.tools.server_manager - 'weather' session ready — tools can now be called.
+2026-05-28 13:58:51,330 INFO utils.tools.server_manager - 'flights' session ready — tools can now be called.
+2026-05-28 13:58:51,330 INFO utils.tools.server_manager - MCP startup complete: {'weather': True, 'flights': True}
+2026-05-28 13:58:51,331 INFO main - MCP servers started successfully.
+2026-05-28 14:00:29,856 INFO main - Shutting down MCP servers...
+2026-05-28 14:00:29,873 INFO utils.tools.server_manager - All MCP servers shut down.
+2026-05-28 14:00:29,873 INFO main - MCP servers shut down successfully.
+2026-05-28 14:00:55,883 INFO main - Starting MCP servers...
+2026-05-28 14:00:59,099 INFO utils.tools.server_manager - 'weather' session ready — tools can now be called.
+2026-05-28 14:01:04,790 INFO utils.tools.server_manager - 'flights' session ready — tools can now be called.
+2026-05-28 14:01:04,791 INFO utils.tools.server_manager - MCP startup complete: {'weather': True, 'flights': True}
+2026-05-28 14:01:04,792 INFO main - MCP servers started successfully.
+2026-05-28 14:01:17,505 INFO main - Shutting down MCP servers...
+2026-05-28 14:01:17,512 INFO utils.tools.server_manager - All MCP servers shut down.
+2026-05-28 14:01:17,513 INFO main - MCP servers shut down successfully.

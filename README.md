@@ -58,7 +58,7 @@ From repo root:
 
 ```bash
 cd mcp_app
-python main.py
+uv run main.py
 ```
 
 - The app starts the MCP servers automatically using [mcp_app/utils/tools/server_manager.py](mcp_app/utils/tools/server_manager.py).
